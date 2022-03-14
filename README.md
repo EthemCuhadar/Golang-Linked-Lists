@@ -18,3 +18,36 @@
 * 4. IsEmpty()
 * 5. Top()
 
+------------------------------------------------------------
+
+## Example usage
+
+```go
+  S := new(Stack)
+	fmt.Println("empty? ", S.IsEmpty())
+	S.Push("cat")
+	S.Push(1999)
+	S.Push("Car")
+	S.Push(11.111)
+	S.Push(true)
+	fmt.Println(S.data)
+	fmt.Println("len(S) ", S.Len())
+	fmt.Println("pop ", S.Pop())
+	fmt.Println("pop ", S.Pop())
+	fmt.Println(S.data)
+	fmt.Println("len(S) ", S.Len())
+	fmt.Println("top ", S.Top())
+	fmt.Println("empty? ", S.IsEmpty())
+```
+
+```[console]
+empty?  true
+[cat 1999 Car 11.111 true]
+len(S)  5
+pop  true
+pop  11.111
+[cat 1999 Car]
+len(S)  3
+top  Car
+empty?  false
+```
