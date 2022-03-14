@@ -61,3 +61,8 @@ empty?  false
 * All of the ADT operations are implemented. Moreover, **Show()** function is explemented as an extra to show whole data stored in stack.
 * In order to overcome data errors, **sync.Mutex** is used to applying functions concurrently.
 * Whole code implementation can be seen in **main.go**.
+------------------------------------------------------
+
+## Licence
+
+MIT
