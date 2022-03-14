@@ -10,7 +10,7 @@
 * They are linear data structures.
 * Working principle of stacks is LIFO (Last in first out).
 
-![Stack Image](stack.png)
+
 
 * ADT (Abstract Data Type) operations of stacks are:
 * 1. Push()
@@ -18,6 +18,22 @@
 * 3. Len()
 * 4. IsEmpty()
 * 5. Top()
+
+----------------------------------------------------------
+## Time complexities of ADT operations
+
+| **Operation** | **Complexity** |
+| ------------- | -------------- |
+| Q.Push(e)     | O(1)*          |
+| Q.Pop()       | O(1)*          |
+| Q.Top()       | O(1)           |
+| Q.IsEmpty()   | O(1)           |
+| Q.Len()       | O(1)           |
+
+* Why Push and Pop operations are **amortized**?
+* Because, these operations can cause reallocation (extension or shrinkage) on slices.
+
+![Stack Image](stack.png)
 
 ------------------------------------------------------------
 
