@@ -7,6 +7,7 @@
 # Stacks
 
 * Stacks are one of the fundamental data structures in computer science.
+* They are linear data structures.
 * Working principle of stacks is LIFO (Last in first out).
 
 ![Stack Image](stack.png)
@@ -23,21 +24,21 @@
 ## Example usage
 
 ```go
-  S := new(Stack)
-	fmt.Println("empty? ", S.IsEmpty())
-	S.Push("cat")
-	S.Push(1999)
-	S.Push("Car")
-	S.Push(11.111)
-	S.Push(true)
-	fmt.Println(S.data)
-	fmt.Println("len(S) ", S.Len())
-	fmt.Println("pop ", S.Pop())
-	fmt.Println("pop ", S.Pop())
-	fmt.Println(S.data)
-	fmt.Println("len(S) ", S.Len())
-	fmt.Println("top ", S.Top())
-	fmt.Println("empty? ", S.IsEmpty())
+S := new(Stack)
+fmt.Println("empty? ", S.IsEmpty())
+S.Push("cat")
+S.Push(1999)
+S.Push("Car")
+S.Push(11.111)
+S.Push(true)
+fmt.Println(S.Show())
+fmt.Println("len(S) ", S.Len())
+fmt.Println("pop ", S.Pop())
+fmt.Println("pop ", S.Pop())
+fmt.Println(S.Show())
+fmt.Println("len(S) ", S.Len())
+fmt.Println("top ", S.Top())
+fmt.Println("empty? ", S.IsEmpty())
 ```
 
 ```[console]
@@ -51,3 +52,12 @@ len(S)  3
 top  Car
 empty?  false
 ```
+--------------------------------------------------
+
+## Implementation
+
+* In implementation, slice is used to store data.
+* As the type that are going to store in stack structure, **interface** is used.
+* All of the ADT operations are implemented. Moreover, **Show()** function is explemented as an extra to show whole data stored in stack.
+* In order to overcome data errors, **sync.Mutex** is used to applying functions concurrently.
+* Whole code implementation can be seen in **main.go**.
