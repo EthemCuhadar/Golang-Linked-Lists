@@ -60,7 +60,7 @@ empty?  false
 * As the type that are going to store in stack structure, **interface** is used.
 * All of the ADT operations are implemented. Moreover, **Show()** function is explemented as an extra to show whole data stored in stack.
 * In order to overcome data errors, **sync.Mutex** is used to applying functions concurrently.
-* Whole code implementation can be seen in **main.go**.
+* Whole code implementation can be seen in **Stacks/Stacks.go**.
 ------------------------------------------------------
 
 ## Licence
